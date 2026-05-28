@@ -66,7 +66,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
             );
           })}
         </nav>
-      </header>
+        {children}
 
       <main className="flex-1">
         <Outlet />
