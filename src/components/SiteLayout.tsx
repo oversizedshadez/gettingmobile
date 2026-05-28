@@ -1,7 +1,7 @@
 import { Link, useRouterState } from "@tanstack/react-router";
 import type { ReactNode } from "react";
 
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-gm.png";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -20,13 +20,10 @@ export function SiteLayout({ children }: { children: ReactNode }) {
     <div className="min-h-screen flex flex-col bg-background">
       <header className="sticky top-0 z-40 backdrop-blur-md bg-background/85 border-b border-border">
         <div className="mx-auto max-w-7xl px-5 sm:px-8 flex items-center justify-between h-18 py-3">
-          <Link to="/" className="flex items-center gap-2.5 group">
-            <img src={logo} alt="Getting Mobile logo" width={40} height={40} className="h-10 w-10 transition-transform group-hover:rotate-6" />
-            <div className="leading-tight">
-              <div className="font-display text-lg text-secondary">GETTING</div>
-              <div className="font-display text-lg text-primary -mt-1">MOBILE</div>
-            </div>
+          <Link to="/" className="flex items-center group">
+            <img src={logo} alt="Getting Mobile" width={1248} height={222} className="h-10 sm:h-11 w-auto transition-transform group-hover:scale-[1.03]" />
           </Link>
+
           <nav className="hidden md:flex items-center gap-1">
             {nav.map((item) => {
               const active = pathname === item.to;
