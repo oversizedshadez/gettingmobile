@@ -66,11 +66,12 @@ export function SiteLayout({ children }: { children: ReactNode }) {
             );
           })}
         </nav>
-        {children}
+      </header>
 
       <main className="flex-1">
-        <Outlet />
+        {children}
       </main>
+
 
       <footer className="bg-secondary text-secondary-foreground mt-20">
         <div className="mx-auto max-w-7xl px-5 sm:px-8 py-14 grid md:grid-cols-3 gap-10">
