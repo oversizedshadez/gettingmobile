@@ -1,4 +1,6 @@
-import { Link, Outlet, useRouterState } from "@tanstack/react-router";
+import { Link, useRouterState } from "@tanstack/react-router";
+import type { ReactNode } from "react";
+
 import logo from "@/assets/logo.png";
 
 const nav = [
@@ -10,8 +12,9 @@ const nav = [
   { to: "/donate", label: "Donate" },
 ];
 
-export function SiteLayout() {
+export function SiteLayout({ children }: { children: ReactNode }) {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
+
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
