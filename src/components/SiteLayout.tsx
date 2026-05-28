@@ -1,7 +1,7 @@
 import { Link, useRouterState } from "@tanstack/react-router";
 import type { ReactNode } from "react";
 
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-gm.png";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -20,13 +20,10 @@ export function SiteLayout({ children }: { children: ReactNode }) {
     <div className="min-h-screen flex flex-col bg-background">
       <header className="sticky top-0 z-40 backdrop-blur-md bg-background/85 border-b border-border">
         <div className="mx-auto max-w-7xl px-5 sm:px-8 flex items-center justify-between h-18 py-3">
-          <Link to="/" className="flex items-center gap-2.5 group">
-            <img src={logo} alt="Getting Mobile logo" width={40} height={40} className="h-10 w-10 transition-transform group-hover:rotate-6" />
-            <div className="leading-tight">
-              <div className="font-display text-lg text-secondary">GETTING</div>
-              <div className="font-display text-lg text-primary -mt-1">MOBILE</div>
-            </div>
+          <Link to="/" className="flex items-center group">
+            <img src={logo} alt="Getting Mobile" width={1248} height={222} className="h-10 sm:h-11 w-auto transition-transform group-hover:scale-[1.03]" />
           </Link>
+
           <nav className="hidden md:flex items-center gap-1">
             {nav.map((item) => {
               const active = pathname === item.to;
@@ -76,14 +73,14 @@ export function SiteLayout({ children }: { children: ReactNode }) {
       <footer className="bg-secondary text-secondary-foreground mt-20">
         <div className="mx-auto max-w-7xl px-5 sm:px-8 py-14 grid md:grid-cols-3 gap-10">
           <div>
-            <div className="flex items-center gap-2.5 mb-4">
-              <img src={logo} alt="" width={40} height={40} className="h-10 w-10" />
-              <div className="font-display text-xl">GETTING MOBILE</div>
+            <div className="mb-4 bg-white/5 rounded-xl p-2 inline-block">
+              <img src={logo} alt="Getting Mobile" width={1248} height={222} className="h-10 w-auto" />
             </div>
             <p className="text-sm text-secondary-foreground/75 max-w-xs">
               Helping kids defeat obesity through exercise and nutrition — building lifelong habits, one community at a time.
             </p>
           </div>
+
           <div>
             <div className="font-display text-sm tracking-widest text-primary mb-4">EXPLORE</div>
             <ul className="space-y-2 text-sm">
