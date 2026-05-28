@@ -72,20 +72,19 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Getting Mobile — Helping Kids Defeat Obesity" },
+      { name: "description", content: "Getting Mobile is a nonprofit helping kids defeat obesity through exercise and nutrition — building lifelong habits in Mobile, AL and beyond." },
+      { name: "author", content: "Getting Mobile" },
+      { property: "og:title", content: "Getting Mobile — Helping Kids Defeat Obesity" },
+      { property: "og:description", content: "Exercise, nutrition, community. Building lifelong healthy habits for kids." },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
-      {
-        rel: "stylesheet",
-        href: appCss,
-      },
+      { rel: "stylesheet", href: appCss },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&display=swap" },
     ],
   }),
   shellComponent: RootShell,
@@ -93,6 +92,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
   notFoundComponent: NotFoundComponent,
   errorComponent: ErrorComponent,
 });
+
 
 function RootShell({ children }: { children: React.ReactNode }) {
   return (

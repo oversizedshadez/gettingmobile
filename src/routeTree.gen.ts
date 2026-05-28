@@ -9,8 +9,38 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as YearInReviewRouteImport } from './routes/year-in-review'
+import { Route as PsaRouteImport } from './routes/psa'
+import { Route as OngoingRouteImport } from './routes/ongoing'
+import { Route as DonateRouteImport } from './routes/donate'
+import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
+const YearInReviewRoute = YearInReviewRouteImport.update({
+  id: '/year-in-review',
+  path: '/year-in-review',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PsaRoute = PsaRouteImport.update({
+  id: '/psa',
+  path: '/psa',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OngoingRoute = OngoingRouteImport.update({
+  id: '/ongoing',
+  path: '/ongoing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DonateRoute = DonateRouteImport.update({
+  id: '/donate',
+  path: '/donate',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -19,28 +49,96 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/donate': typeof DonateRoute
+  '/ongoing': typeof OngoingRoute
+  '/psa': typeof PsaRoute
+  '/year-in-review': typeof YearInReviewRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/donate': typeof DonateRoute
+  '/ongoing': typeof OngoingRoute
+  '/psa': typeof PsaRoute
+  '/year-in-review': typeof YearInReviewRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/donate': typeof DonateRoute
+  '/ongoing': typeof OngoingRoute
+  '/psa': typeof PsaRoute
+  '/year-in-review': typeof YearInReviewRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/donate'
+    | '/ongoing'
+    | '/psa'
+    | '/year-in-review'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/about' | '/donate' | '/ongoing' | '/psa' | '/year-in-review'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/donate'
+    | '/ongoing'
+    | '/psa'
+    | '/year-in-review'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  DonateRoute: typeof DonateRoute
+  OngoingRoute: typeof OngoingRoute
+  PsaRoute: typeof PsaRoute
+  YearInReviewRoute: typeof YearInReviewRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/year-in-review': {
+      id: '/year-in-review'
+      path: '/year-in-review'
+      fullPath: '/year-in-review'
+      preLoaderRoute: typeof YearInReviewRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/psa': {
+      id: '/psa'
+      path: '/psa'
+      fullPath: '/psa'
+      preLoaderRoute: typeof PsaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ongoing': {
+      id: '/ongoing'
+      path: '/ongoing'
+      fullPath: '/ongoing'
+      preLoaderRoute: typeof OngoingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/donate': {
+      id: '/donate'
+      path: '/donate'
+      fullPath: '/donate'
+      preLoaderRoute: typeof DonateRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -53,17 +151,12 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  DonateRoute: DonateRoute,
+  OngoingRoute: OngoingRoute,
+  PsaRoute: PsaRoute,
+  YearInReviewRoute: YearInReviewRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
