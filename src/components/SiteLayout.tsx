@@ -73,14 +73,14 @@ export function SiteLayout({ children }: { children: ReactNode }) {
       <footer className="bg-secondary text-secondary-foreground mt-20">
         <div className="mx-auto max-w-7xl px-5 sm:px-8 py-14 grid md:grid-cols-3 gap-10">
           <div>
-            <div className="flex items-center gap-2.5 mb-4">
-              <img src={logo} alt="" width={40} height={40} className="h-10 w-10" />
-              <div className="font-display text-xl">GETTING MOBILE</div>
             <div className="mb-4 bg-white/5 rounded-xl p-2 inline-block">
               <img src={logo} alt="Getting Mobile" width={1248} height={222} className="h-10 w-auto" />
             </div>
-
+            <p className="text-sm text-secondary-foreground/75 max-w-xs">
+              Helping kids defeat obesity through exercise and nutrition — building lifelong habits, one community at a time.
+            </p>
           </div>
+
           <div>
             <div className="font-display text-sm tracking-widest text-primary mb-4">EXPLORE</div>
             <ul className="space-y-2 text-sm">
