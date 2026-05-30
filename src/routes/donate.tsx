@@ -23,11 +23,6 @@ const tiers = [
   { name: "Champion", price: "$2,500", per: "corporate", body: "Underwrite a full community event. Includes logo placement, on-site activation, and social recognition.", highlight: false, cta: "Sponsor an event" },
 ];
 
-const personas = [
-  { who: "Donor Dave", pitch: "You believe in measurable impact. Every dollar you give is tracked to the event, the kids reached, and the post-event sign-ups it produced.", color: "bg-primary text-primary-foreground" },
-  { who: "Volunteer Victor", pitch: "Bring your energy on event days — set up, run drills, lead a walk, hand out healthy snacks. Volunteer hours are recognized publicly and on a certificate of service.", color: "bg-accent text-accent-foreground" },
-  { who: "Corporate Cathy", pitch: "Sponsor an event and put your brand alongside a cause your employees and community already care about. Tax-deductible, on-site activation, and a co-branded press release included.", color: "bg-secondary text-secondary-foreground" },
-];
 
 function Donate() {
   return (
