@@ -55,16 +55,9 @@ function Donate() {
       </section>
 
       <section className="mx-auto max-w-7xl px-5 sm:px-8 pb-20">
-        <div className="text-xs font-bold tracking-widest text-primary mb-3">WHY GIVE</div>
-        <h2 className="font-display text-3xl md:text-4xl mb-8 max-w-3xl">Three ways to make a difference — pick the one that fits you.</h2>
-        <div className="grid md:grid-cols-3 gap-5">
-          {personas.map((p) => (
-            <div key={p.who} className={`rounded-3xl p-8 ${p.color}`}>
-              <div className="font-display text-2xl mb-3">{p.who}</div>
-              <p className="text-sm leading-relaxed opacity-90">{p.pitch}</p>
-            </div>
-          ))}
-        </div>
+        <div className="text-xs font-bold tracking-widest text-primary mb-3">VOLUNTEERS</div>
+        <h2 className="font-display text-3xl md:text-4xl mb-6 max-w-3xl">Volunteers are the backbone of Getting Mobile.</h2>
+        <p className="text-muted-foreground leading-relaxed max-w-3xl">From organizing events and setting up activity stations, to supporting kids during drills and cooking workshops, to carrying the mission through every neighborhood we reach — volunteers make it all possible. Without people willing to show up, cheer kids on, and keep programs running, Getting Mobile simply wouldn't exist. Whether you can give a few hours on a weekend or commit to an ongoing role, your time is what turns our mission into real, life-changing moments for children and families.</p>
       </section>
 
       <section className="mx-auto max-w-7xl px-5 sm:px-8 pb-24">
