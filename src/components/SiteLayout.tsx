@@ -6,8 +6,8 @@ import logo from "@/assets/logo-gm.png";
 const nav = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
-  { to: "/year-in-review", label: "Year in Review" },
   { to: "/ongoing", label: "Ongoing" },
+  { to: "/year-in-review", label: "Year in Review" },
   { to: "/psa", label: "PSA" },
   { to: "/donate", label: "Donate" },
 ];
@@ -97,6 +97,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
               <li>Mobile, Alabama</li>
               <li>hello@gettingmobile.org</li>
               <li>Founded 2026 · Ariel Rismany, Ariel Danialian, Ethan Shipkevich</li>
+              <li>College Management/Marketing '26</li>
             </ul>
           </div>
         </div>
