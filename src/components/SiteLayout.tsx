@@ -6,8 +6,8 @@ import logo from "@/assets/logo-gm.png";
 const nav = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
-  { to: "/year-in-review", label: "Year in Review" },
   { to: "/ongoing", label: "Ongoing" },
+  { to: "/year-in-review", label: "Year in Review" },
   { to: "/psa", label: "PSA" },
   { to: "/donate", label: "Donate" },
 ];
