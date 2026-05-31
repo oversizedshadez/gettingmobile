@@ -97,6 +97,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
               <li>Mobile, Alabama</li>
               <li>hello@gettingmobile.org</li>
               <li>Founded 2026 · Ariel Rismany, Ariel Danialian, Ethan Shipkevich</li>
+              <li>College Management/Marketing '26</li>
             </ul>
           </div>
         </div>
