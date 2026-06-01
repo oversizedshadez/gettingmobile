@@ -73,7 +73,7 @@ function About() {
           <div className="border-2 border-primary rounded-3xl p-8">
             <div className="font-display text-primary text-sm tracking-widest mb-2">PRIMARY</div>
             <h3 className="font-display text-2xl mb-3">Kids ages 6–14 in high-obesity communities</h3>
-            <p className="text-muted-foreground leading-relaxed">Starting with Mobile, AL — where blue-collar families and underserved neighborhoods face obesity rates near 45%. Every program is designed for them first.</p>
+            <p className="text-muted-foreground leading-relaxed">Starting with Mobile, AL, where blue-collar families and underserved neighborhoods face obesity rates near 45%. Every program is designed for them first.</p>
           </div>
           <div className="border-2 border-secondary rounded-3xl p-8">
             <div className="font-display text-secondary text-sm tracking-widest mb-2">SECONDARY</div>
