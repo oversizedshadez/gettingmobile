@@ -32,7 +32,7 @@ function About() {
       <section className="mx-auto max-w-7xl px-5 sm:px-8 py-20 grid md:grid-cols-3 gap-6">
         {[
           { n: "01", t: "Why", body: "Childhood obesity has become a generational health crisis — especially in communities like Mobile, AL, where rates reach 45%. Habits formed before age 12 last a lifetime. We act now so kids don't carry preventable disease into adulthood." },
-          { n: "02", t: "What", body: "We design, fund, and run community events — sports, walks, nutrition workshops, and public seminars — that make movement and healthy food feel exciting, social, and accessible." },
+          { n: "02", t: "What", body: "We design, fund, and run community events (sports, walks, nutrition workshops, and public seminars) that make movement and healthy food feel exciting, social, and accessible." },
           { n: "03", t: "How", body: "We partner with schools, gyms, PTAs, recreation departments, and motivational figures to meet kids where they are. We measure community reach, post-event sign-ups, and long-term engagement." },
         ].map((c) => (
           <div key={c.n} className="bg-card rounded-3xl p-8 shadow-card">
@@ -73,12 +73,12 @@ function About() {
           <div className="border-2 border-primary rounded-3xl p-8">
             <div className="font-display text-primary text-sm tracking-widest mb-2">PRIMARY</div>
             <h3 className="font-display text-2xl mb-3">Kids ages 6–14 in high-obesity communities</h3>
-            <p className="text-muted-foreground leading-relaxed">Starting with Mobile, AL — where blue-collar families and underserved neighborhoods face obesity rates near 45%. Every program is designed for them first.</p>
+            <p className="text-muted-foreground leading-relaxed">Starting with Mobile, AL, where blue-collar families and underserved neighborhoods face obesity rates near 45%. Every program is designed for them first.</p>
           </div>
           <div className="border-2 border-secondary rounded-3xl p-8">
             <div className="font-display text-secondary text-sm tracking-widest mb-2">SECONDARY</div>
             <h3 className="font-display text-2xl mb-3">Parents, schools, and community partners</h3>
-            <p className="text-muted-foreground leading-relaxed">The adults whose support turns a one-time event into a lasting habit — PTAs, coaches, gym owners, recreation departments, and local employers.</p>
+            <p className="text-muted-foreground leading-relaxed">The adults whose support turns a one-time event into a lasting habit: PTAs, coaches, gym owners, recreation departments, and local employers.</p>
           </div>
         </div>
       </section>
