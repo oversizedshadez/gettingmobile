@@ -31,7 +31,7 @@ function About() {
 
       <section className="mx-auto max-w-7xl px-5 sm:px-8 py-20 grid md:grid-cols-3 gap-6">
         {[
-          { n: "01", t: "Why", body: "Childhood obesity has become a generational health crisis — especially in communities like Mobile, AL, where rates reach 45%. Habits formed before age 12 last a lifetime. We act now so kids don't carry preventable disease into adulthood." },
+          { n: "01", t: "Why", body: "Childhood obesity has become a generational health crisis, especially in communities like Mobile, AL, where rates reach 45%. Habits formed before age 12 last a lifetime. We act now so kids don't carry preventable disease into adulthood." },
           { n: "02", t: "What", body: "We design, fund, and run community events (sports, walks, nutrition workshops, and public seminars) that make movement and healthy food feel exciting, social, and accessible." },
           { n: "03", t: "How", body: "We partner with schools, gyms, PTAs, recreation departments, and motivational figures to meet kids where they are. We measure community reach, post-event sign-ups, and long-term engagement." },
         ].map((c) => (
