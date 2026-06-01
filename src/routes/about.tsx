@@ -47,16 +47,16 @@ function About() {
         <div className="bg-primary text-primary-foreground rounded-3xl p-10">
           <div className="text-xs font-bold tracking-widest mb-3 opacity-80">VISION</div>
           <h3 className="font-display text-3xl mb-4">A generation of kids who choose movement and nourishment by default.</h3>
-          <p className="opacity-90 leading-relaxed">We see a future where healthy habits aren't a privilege — they're the norm in every neighborhood.</p>
+          <p className="opacity-90 leading-relaxed">We see a future where healthy habits aren't a privilege; they're the norm in every neighborhood.</p>
         </div>
         <div className="bg-card rounded-3xl p-10 shadow-card">
           <div className="text-xs font-bold tracking-widest text-primary mb-3">CORE VALUES</div>
           <ul className="space-y-3">
-            {["Accessibility — events open to all, regardless of income or fitness level.",
-              "Joy — movement should feel like play, not punishment.",
-              "Community — we build with local partners, not for them.",
-              "Evidence — we measure what works and adapt fast.",
-              "Lifelong — short events, long habits."].map((v) => (
+            {["Accessibility: events open to all, regardless of income or fitness level.",
+              "Joy: movement should feel like play, not punishment.",
+              "Community: we build with local partners, not for them.",
+              "Evidence: we measure what works and adapt fast.",
+              "Lifelong: short events, long habits."].map((v) => (
               <li key={v} className="flex gap-3">
                 <span className="mt-1 h-2 w-2 rounded-full bg-accent shrink-0" />
                 <span className="text-sm leading-relaxed">{v}</span>
