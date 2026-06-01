@@ -35,7 +35,7 @@ function Home() {
             <span className="h-2 w-2 rounded-full bg-primary animate-pulse" /> A Non-Profit From Mobile, AL
           </div>
           <h1 className="font-display text-5xl sm:text-7xl md:text-8xl max-w-4xl text-balance">
-            Helping kids <span className="text-primary">defeat obesity</span> — one move at a time.
+            Helping kids <span className="text-primary">defeat obesity</span>, one move at a time.
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-white/85 leading-relaxed">
             Through exercise, nutrition, and community events, Getting Mobile builds the lifelong habits that transform kids' health long before adulthood.
