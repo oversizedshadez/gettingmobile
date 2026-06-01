@@ -78,7 +78,7 @@ function About() {
           <div className="border-2 border-secondary rounded-3xl p-8">
             <div className="font-display text-secondary text-sm tracking-widest mb-2">SECONDARY</div>
             <h3 className="font-display text-2xl mb-3">Parents, schools, and community partners</h3>
-            <p className="text-muted-foreground leading-relaxed">The adults whose support turns a one-time event into a lasting habit — PTAs, coaches, gym owners, recreation departments, and local employers.</p>
+            <p className="text-muted-foreground leading-relaxed">The adults whose support turns a one-time event into a lasting habit: PTAs, coaches, gym owners, recreation departments, and local employers.</p>
           </div>
         </div>
       </section>
