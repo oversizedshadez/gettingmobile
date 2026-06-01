@@ -81,7 +81,7 @@ function Year() {
         <div className="bg-secondary text-secondary-foreground rounded-3xl p-10 md:p-14">
           <div className="text-xs font-bold tracking-widest text-primary mb-3">WHAT WE LEARNED</div>
           <h2 className="font-display text-3xl md:text-4xl mb-6">Sports get them in the door. Community keeps them coming back.</h2>
-          <p className="text-white/80 leading-relaxed max-w-3xl">Across every event, the metric that mattered most wasn't attendance — it was the percentage of attendees who signed up for ongoing programs. Year one proved that with the right partners and the right tone, kids will keep showing up.</p>
+          <p className="text-white/80 leading-relaxed max-w-3xl">Across every event, the metric that mattered most wasn't attendance; it was the percentage of attendees who signed up for ongoing programs. Year one proved that with the right partners and the right tone, kids will keep showing up.</p>
         </div>
       </section>
     </>
