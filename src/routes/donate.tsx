@@ -57,7 +57,7 @@ function Donate() {
       <section className="mx-auto max-w-7xl px-5 sm:px-8 pb-20">
         <div className="text-xs font-bold tracking-widest text-primary mb-3">DONORS</div>
         <h2 className="font-display text-3xl md:text-4xl mb-6 max-w-3xl">Donors keep Getting Mobile moving.</h2>
-        <p className="text-muted-foreground leading-relaxed max-w-3xl">Every program, event, and workshop we run begins with a donor who believed kids deserve a healthier future. Donors fund the equipment, materials, and spaces that make our programs possible. They sustain the year-round operations — from planning community events to supporting families with healthy-cooking kits — and ensure we can keep showing up for kids who need it most. Without committed donors, Getting Mobile cannot grow, adapt, or reach the next neighborhood. Your gift, at any level, is the engine that turns our mission into sustained, life-changing impact.</p>
+        <p className="text-muted-foreground leading-relaxed max-w-3xl">Every program, event, and workshop we run begins with a donor who believed kids deserve a healthier future. Donors fund the equipment, materials, and spaces that make our programs possible. They sustain the year-round operations, from planning community events to supporting families with healthy-cooking kits, and ensure we can keep showing up for kids who need it most. Without committed donors, Getting Mobile cannot grow, adapt, or reach the next neighborhood. Your gift, at any level, is the engine that turns our mission into sustained, life-changing impact.</p>
       </section>
 
       <section className="mx-auto max-w-7xl px-5 sm:px-8 pb-24">
