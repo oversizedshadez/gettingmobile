@@ -67,9 +67,9 @@ function Home() {
       <section className="mx-auto max-w-7xl px-5 sm:px-8 py-20 md:py-28">
         <div className="grid md:grid-cols-3 gap-5">
           {[
-            { tag: "MOVE", title: "Exercise that feels like play", body: "Flag football, basketball, community walks — sport-led events that get kids moving and laughing.", img: football },
+            { tag: "MOVE", title: "Exercise that feels like play", body: "Flag football, basketball, and community walks: sport-led events that get kids moving and laughing.", img: football },
             { tag: "FUEL", title: "Nutrition the family can cook", body: "Affordable, hands-on cooking workshops led by nutritionists and local chefs.", img: cooking },
-            { tag: "TOGETHER", title: "A community that shows up", body: "Schools, gyms, PTAs and recreation centers — we partner with the people kids already trust.", img: walk },
+            { tag: "TOGETHER", title: "A community that shows up", body: "Schools, gyms, PTAs, and recreation centers: we partner with the people kids already trust.", img: walk },
           ].map((c) => (
             <article key={c.tag} className="bg-card rounded-3xl overflow-hidden shadow-card group">
               <div className="aspect-[4/3] overflow-hidden">
