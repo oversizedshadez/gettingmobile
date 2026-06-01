@@ -65,7 +65,7 @@ function Donate() {
           <div>
             <div className="text-xs font-bold tracking-widest text-primary mb-3">GET INVOLVED</div>
             <h2 className="font-display text-3xl md:text-4xl mb-4">Tell us how you'd like to help.</h2>
-            <p className="text-muted-foreground leading-relaxed">Whether you want to volunteer, sponsor, or just learn more — drop your details and we'll be in touch within a week.</p>
+            <p className="text-muted-foreground leading-relaxed">Whether you want to volunteer, sponsor, or just learn more, drop your details and we'll be in touch within a week.</p>
           </div>
           <form className="space-y-3" onSubmit={(e) => { e.preventDefault(); alert("Thanks! We'll be in touch."); }}>
             <input required type="text" placeholder="Your name" className="w-full px-5 py-3.5 rounded-full bg-muted border border-border focus:outline-none focus:ring-2 focus:ring-primary" />

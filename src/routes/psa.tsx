@@ -23,7 +23,7 @@ function PSA() {
       <div className="text-xs font-bold tracking-widest text-primary mb-4">PUBLIC SERVICE ANNOUNCEMENT</div>
       <h1 className="font-display text-5xl md:text-6xl mb-6 text-balance">Watch our PSA.</h1>
       <p className="text-muted-foreground text-lg max-w-2xl leading-relaxed mb-10">
-        A short look at the heart of Getting Mobile — kids, movement, and the families that make it possible.
+        A short look at the heart of Getting Mobile: kids, movement, and the families that make it possible.
       </p>
 
       <div className="relative aspect-video rounded-3xl overflow-hidden shadow-pop bg-black">
