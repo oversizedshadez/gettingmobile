@@ -30,7 +30,7 @@ function Ongoing() {
 
       <section className="mx-auto max-w-7xl px-5 sm:px-8 py-20 grid md:grid-cols-2 gap-5">
         {[
-          { tag: "FLAGSHIP EVENT", title: "Public Seminar at Mobile Convention Center", body: "Subject-matter experts, parents, and kids in one room — informational and emotional. Located at the Arthur R. Outlaw Convention Center for capacity, visibility, and credibility.", when: "Spring 2027" },
+          { tag: "FLAGSHIP EVENT", title: "Public Seminar at Mobile Convention Center", body: "Subject-matter experts, parents, and kids in one room, both informational and emotional. Located at the Arthur R. Outlaw Convention Center for capacity, visibility, and credibility.", when: "Spring 2027" },
           { tag: "MOTIVATIONAL EVENT", title: "Goggins Pulls Up — 40% Rule Run", body: "A community run with a twist: when most participants think they're done, we reveal they're only 40% done. A live experiment in discipline, mindset, and what kids can do when they believe they can.", when: "Summer 2027" },
           { tag: "PROGRAM", title: "12-Week Family Fitness Plan", body: "A post-event sign-up that turns a single great day into a 12-week habit. Sent home with families after every flagship event.", when: "Year-round" },
           { tag: "PARTNERSHIP", title: "Schools & Recreation Departments", body: "Embedding nutrition and movement curriculum into the places kids already spend their week — partnering with PTAs, district wellness leads, and city rec programs.", when: "Ongoing" },
